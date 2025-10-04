@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduTech: Inovasi Teknologi untuk Dunia Pendidikan</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0; padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    body { line-height: 1.6; color: #333; }
+
+    /* Navbar */
+    .navbar {
+      background: #2563eb; color: #fff;
+      padding: 15px 0;
+      position: sticky; top: 0; z-index: 1000;
+    }
+    .navbar .container {
+      display: flex; justify-content: space-between; align-items: center;
+      width: 90%; margin: auto;
+    }
+    .navbar ul { display: flex; list-style: none; }
+    .navbar ul li { margin-left: 20px; }
+    .navbar a { color: #f4f3f7; text-decoration: none; transition: 0.3s; }
+    .navbar a:hover { text-decoration: underline; }
+
+    /* Hero */
+    .hero {
+      background: linear-gradient(to right, #2563eb, #1e3a8a);
+      color: #fff; 
+      text-align: center; 
+      padding: 100px 20px;
+      display: flex; 
+      justify-content: center; 
+      align-items: center;
+      flex-direction: column;
+    }
+    .hero h2 {
+      font-size: 2.8rem; 
+      margin-bottom: 15px; 
+      font-weight: bold;
+    }
+    .hero .tagline {
+      font-size: 1.3rem; 
+      margin-bottom: 30px; 
+      font-weight: 300; 
+      color: #e0e7ff;
+    }
+    .hero .btn {
+      background: #fff; 
+      color: #2563eb;
+      padding: 12px 25px; 
+      border-radius: 25px;
+      text-decoration: none; 
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .hero .btn:hover {
+      background: #f1f5f9; 
+      transform: scale(1.05);
+    }
+
+    /* Sections */
+    .section { padding: 60px 20px; }
+    .bg-light { background: #027bf3; }
+    .container { width: 90%; margin: auto; }
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+    .img-box { width: 100%; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+    .card { background: #f4f4f5; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+
+    /* Features */
+    .features { list-style: none; font-size: 1.1rem; line-height: 2; }
+
+    .testimonial {
+  background: #2563eb; 
+  color: #fff; 
+  text-align: center;   /* pastikan semua teks rata tengah */
+  padding: 40px 20px;   /* kasih ruang lebih */
+}
+
+.testimonial blockquote {
+  font-size: 1.2rem;    /* lebih kecil dari sebelumnya */
+  font-style: italic;
+  max-width: 700px;
+  margin: 0 auto 15px;  /* teks rata tengah */
+  line-height: 1.6;
+}
+
+.testimonial p {
+  font-size: 1rem;      /* ukuran lebih kecil */
+  margin: 0 auto;
+  color: #fff;          /* pastikan tetap putih */
+  font-weight: bold;
+  text-align: center;   /* pastikan rata tengah */
+}
+
+
+
+    .form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;   /* tengah */
+      gap: 15px;
+      max-width: 400px;      /* tidak terlalu lebar */
+      margin: 0 auto;        /* form rata tengah */
+      text-align: center;
+    }
+    .form input, .form textarea, .form button {
+      width: 100%; 
+      padding: 10px; 
+      border: 1px solid #ccc; 
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+    .form textarea { resize: none; min-height: 100px; }
+    .form .btn {
+      background: #2563eb; color: #fff; 
+      border: none; cursor: pointer; font-weight: bold;
+    }
+    .form .btn:hover { background: #1e40af; }
+
+
+    /* Footer */
+    .footer {
+      background: #1f2937; color: #d1d5db; text-align: center; padding: 20px;
+    }
+
+    /* Animasi Scroll */
+    .fade-in {
+      opacity: 0; transform: translateY(20px);
+      transition: opacity 1s ease, transform 1s ease;
+    }
+    .fade-in.show {
+      opacity: 1; transform: translateY(0);
+    }
+
+    /* Responsive */
+    @media(max-width: 768px) {
+      .grid-2, .grid-4 { grid-template-columns: 1fr; }
+      .navbar ul { flex-direction: column; }
+      .navbar ul li { margin: 10px 0; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container">
+      <h1 class="logo">EduTech</h1>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#tentang">Tentang</a></li>
+          <li><a href="#inovasi">Inovasi</a></li>
+          <li><a href="#fitur">Fitur</a></li>
+          <li><a href="#kontak">Kontak</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h2>EduTech: Inovasi Teknologi untuk Dunia Pendidikan</h2>
+      <p class="tagline">🌐 Membawa transformasi digital ke dunia belajar-mengajar</p>
+      <a href="#tentang" class="btn">Pelajari Lebih Lanjut</a>
+    </div>
+  </section>
+
+  <!-- Tentang -->
+  <section id="tentang" class="section">
+    <div class="container grid-2">
+      <div>
+        <h1>Apa itu EduTech?</h1>
+        <p>
+          EduTech adalah inovasi pemanfaatan teknologi untuk meningkatkan kualitas pendidikan. 
+          Dengan teknologi, pembelajaran menjadi lebih fleksibel, mudah diakses, dan personal.
+        </p>
+    </div class="image-box">
+      <img src="https://techcabal.com/wp-content/uploads/tc/2020/02/EduTech-logo-1.png" alt="Ilustrasi EduTech" class="img-box fade-in">
+    </div>
+    </div>
+  </section>
+
+  <!-- Inovasi -->
+  <section id="inovasi" class="section bg-light">
+    <div class="container">
+      <h1>Inovasi Teknologi</h1>
+      <div class="grid-4">
+        <div class="card fade-in"> <h4>E-Learning</h4><p>Kelas online fleksibel kapan saja.</p></div>
+        <div class="card fade-in"> <h4>AI</h4><p>Personalisasi pembelajaran dengan sistem cerdas.</p></div>
+        <div class="card fade-in"> <h4>VR & AR</h4><p>Simulasi virtual untuk pengalaman nyata.</p></div>
+        <div class="card fade-in"> <h4>Smart Classroom</h4><p>Kelas modern interaktif.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fitur -->
+  <section id="fitur" class="section">
+    <div class="container">
+      <h1>Fitur Utama EduTech</h1>
+      <ul class="features">
+        <li class="fade-in">✅ Akses Mudah dari mana saja</li>
+        <li class="fade-in">✅ Interaktif dan menyenangkan</li>
+        <li class="fade-in">✅ Fleksibel sesuai kebutuhan</li>
+        <li class="fade-in">✅ Personalisasi Pembelajaran</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Testimoni -->
+  <section class="section testimonial">
+    <blockquote>“Teknologi hanya alat. Guru adalah kunci untuk membuka pintu dunia belajar.”</blockquote>
+    <p>– Bill Gates</p>
+  </section>
+
+  <!-- Kontak -->
+  <section id="kontak" class="section">
+    <div class="container">
+      <h1 style="text-align:center; margin-bottom:20px;">Hubungi Kami</h1>
+      <form class="form">
+        <input type="text" placeholder="Nama">
+        <input type="email" placeholder="Email">
+        <textarea placeholder="Pesan"></textarea>
+        <button type="submit" class="btn">Kirim</button>
+      </form>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 EduTech. Semua Hak Dilindungi.</p>
+  </footer>
+
+  <script>
+    // Smooth scroll
+    document.querySelectorAll('.navbar a').forEach(link => {
+      link.addEventListener('click', function(e) {
+        if (this.hash !== '') {
+          e.preventDefault();
+          const target = document.querySelector(this.hash);
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+
+    // Animasi muncul saat scroll
+    const elements = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    }, { threshold: 0.2 });
+
+    elements.forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
